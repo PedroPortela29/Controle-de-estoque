@@ -7,4 +7,11 @@
     <RootNamespace>Controle_de_EstoqueWEB</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Views\NewFolder\**" />
+    <Content Remove="Views\NewFolder\**" />
+    <EmbeddedResource Remove="Views\NewFolder\**" />
+    <None Remove="Views\NewFolder\**" />
+  </ItemGroup>
+
 </Project>
