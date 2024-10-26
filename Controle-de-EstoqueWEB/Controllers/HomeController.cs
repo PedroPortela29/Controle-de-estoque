@@ -1,4 +1,5 @@
 using Controle_de_EstoqueWEB.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -13,12 +14,14 @@ namespace Controle_de_EstoqueWEB.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        [Authorize]
+        public IActionResult Sobre()
         {
             return View();
         }
