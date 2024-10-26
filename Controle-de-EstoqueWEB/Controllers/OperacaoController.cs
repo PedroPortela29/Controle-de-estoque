@@ -6,25 +6,25 @@ namespace Controle_de_EstoqueWEB.Controllers
     public class OperacaoController : Controller
     {
         [Authorize]
-        public IActionResult EntradaEstoque()
+        public ActionResult EntradaEstoque()
         {
             return View();
         }
 
         [Authorize]
-        public IActionResult SaidaEstoque()
+        public ActionResult SaidaEstoque()
         {
             return View();
         }
 
         [Authorize]
-        public IActionResult LancPerdaProduto()
+        public ActionResult LancPerdaProduto()
         {
             return View();
         }
 
         [Authorize]
-        public IActionResult Inventario()
+        public ActionResult Inventario()
         {
             return View();
         }

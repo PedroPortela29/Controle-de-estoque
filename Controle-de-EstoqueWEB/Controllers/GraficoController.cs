@@ -6,13 +6,13 @@ namespace Controle_de_EstoqueWEB.Controllers
     public class GraficoController : Controller
     {
         [Authorize]
-        public IActionResult PerdaMes()
+        public ActionResult PerdaMes()
         {
             return View();
         }
 
         [Authorize]
-        public IActionResult EntradaSaidaMes()
+        public ActionResult EntradaSaidaMes()
         {
             return View();
         }

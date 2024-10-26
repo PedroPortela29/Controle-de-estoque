@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddAuthentication("CookieAuth")
     .AddCookie("CookieAuth", config =>
     {
@@ -16,11 +15,9 @@ builder.Services.AddAuthorization(options =>
         .Build();
 });
 
-
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
-
 
 app.UseAuthentication();
 app.UseAuthorization();

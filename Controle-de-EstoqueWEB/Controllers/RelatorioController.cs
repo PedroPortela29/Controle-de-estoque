@@ -6,13 +6,13 @@ namespace Controle_de_EstoqueWEB.Controllers
     public class RelatorioController : Controller
     {
         [Authorize]
-        public IActionResult PosicaoEstoque()
+        public ActionResult PosicaoEstoque()
         {
             return View();
         }
 
         [Authorize]
-        public IActionResult Ressuprimento()
+        public ActionResult Ressuprimento()
         {
             return View();
         }
